@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="card">
+    <form (ngSubmit)="doSubmitForm()" #emailForm="ngForm">
+      <h1 class="text-center">Compose Email</h1>
+
+      <mat-form-field appearance="outline" class="field">
+        <mat-label>To</mat-label>
+        <input matInput placeholder="Recipient email" name="to" [(ngModel)]="emailData.to" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="field">
+        <mat-label>Subject</mat-label>
+        <input matInput placeholder="Email subject" name="subject" [(ngModel)]="emailData.subject" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="example-full-width field">
+        <mat-label>Send a message</mat-label>
+        <textarea rows="10" matInput placeholder="Your message" name="message" [(ngModel)]="emailData.message" required></textarea>
+      </mat-form-field>
+
+      <div class="text-center">
+        <mat-spinner *ngIf="flag" style="margin: auto;"></mat-spinner>
+        <button [disabled]="flag" type="submit" mat-raised-button color="primary" [disabled]="!emailForm.form.valid">Send</button>
+        <button type="reset" class="ml10" mat-raised-button color="accent">Reset</button>
+      </div>
+   
