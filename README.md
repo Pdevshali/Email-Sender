@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
 ## Development server
-## Try it https://legendary-bonbon-c8508a.netlify.app/sendemail
+## Try it https://6651a2bad4167900089923ef--legendary-bonbon-c8508a.netlify.app/
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
